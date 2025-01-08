@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using MyLibrary
+public class MyProgram
+{
+    public static void Main()
+    {
+        MyLibrary.Math.SecondsToTime(4500);
+    }
+}
