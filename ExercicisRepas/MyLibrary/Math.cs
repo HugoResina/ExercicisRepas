@@ -2,9 +2,9 @@
 {
     public class Math
     {
-        public static void SecondsToTime(int secondsInput)
+        public static string SecondsToTime(int secondsInput)
         {
-            const string Time = "Hores: {0}, Minuts: {1}, Segons: {2}";
+            
             int hours;
             int minutes;
             int seconds;
@@ -14,9 +14,11 @@
             rest = secondsInput % 3600;
             minutes = rest / 60;
             rest = rest % 60;
-
             seconds = rest;
-            Console.WriteLine(Time, hours, minutes, seconds);
+
+            string Time = string.Format("Hores: {0}, Minuts: {1}, Segons: {2}", hours, minutes, seconds);
+            return Time;
+
 
 
         }

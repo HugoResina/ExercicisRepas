@@ -1,9 +1,9 @@
 ﻿using System;
-using MyLibrary
+using MyLibrary;
 public class MyProgram
 {
     public static void Main()
     {
-        MyLibrary.Math.SecondsToTime(4500);
+        Console.WriteLine(MyLibrary.Math.SecondsToTime(3888));
     }
 }
